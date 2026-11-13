@@ -1,12 +1,12 @@
 <?php
 include'koneksi.php';
 
-$nama_pelanggan=$_POST['nama_pelanggan'];
-$alamat=$_POST['alamat'];
-$notelp=$_POST['notelp'];
+$nama_produk=$_POST['nama_produk'];
+$harga=$_POST['harga'];
+$stok=$_POST['stok'];
 
-mysqli_query($koneksi, "insert into pelanggan(pelanggan_id, nama_pelanggan, alamat, notelp)
-values('', '$nama_pelanggan', '$alamat', '$notelp')");
+mysqli_query($koneksi, "insert into produk(produk_id, nama_produk, harga, stok)
+values('', '$nama_produk', '$harga', '$stok')");
 
-header('location:tampil.php');
+header('location:databarang.php');
 ?>

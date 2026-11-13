@@ -1,7 +1,7 @@
 <html>
     <body>
         <h1>Barang</h1>
-        <form action="produk_aksi.php" method="post">
+        <form action="tambah_aksi.php" method="post">
             <fieldset>
                 <label for="nama_produk">Nama Barang:</label>
                 <input type="text" name="nama_produk">
